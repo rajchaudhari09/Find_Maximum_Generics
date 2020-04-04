@@ -41,4 +41,22 @@ public class FindMaximumGenericsTest {
         Float thirdMaximum = findMaximumOfThree.maximumFloat(1.1f,2.2f,3.3f);
         Assert.assertEquals((Float) 3.3f,thirdMaximum);
     }
+    //Test For If First String Is Maximum
+    @Test
+    public void givenInput_WhenFirstStringMaximum_ShouldReturnMaximum() {
+        String firstMaximum = findMaximumOfThree.maximumString("banana","apple","peach");
+        Assert.assertEquals("banana",firstMaximum);
+    }
+    //Test For If Second String Is Maximum
+    @Test
+    public void givenInput_WhenSecondStringMaximum_ShouldReturnMaximum() {
+        String secondMaximum = findMaximumOfThree.maximumString("apple","banana","peach");
+        Assert.assertEquals("banana",secondMaximum);
+    }
+    //Test For If Third String Is Maximum
+    @Test
+    public void givenInput_WhenThirdStringMaximum_ShouldReturnMaximum() {
+        String thirdMaximum = findMaximumOfThree.maximumString("apple","peach","banana");
+        Assert.assertEquals("banana",thirdMaximum);
+    }
 }

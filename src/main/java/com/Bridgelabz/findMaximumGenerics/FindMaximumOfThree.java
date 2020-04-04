@@ -27,4 +27,18 @@ public class FindMaximumOfThree {
         }
         return maximumNumber;
     }
+
+    public static String maximumString(String firstString, String secondString, String thirdString) {
+        String maximumString = null;
+        if (firstString.length() > secondString.length() && firstString.length() > thirdString.length()){
+            maximumString=firstString;
+        }
+        else if (secondString.length() > firstString.length() && secondString.length() > thirdString.length()){
+            maximumString=secondString;
+        }
+        else if (thirdString.length() > firstString.length() && thirdString.length() > secondString.length()){
+            maximumString=thirdString;
+        }
+        return maximumString;
+    }
 }
